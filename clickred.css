@@ -1,0 +1,43 @@
+
+/* requirement 1/3 should use CSS to set the style of the text and other parts of the design as appropriate, in at least 3 ways. */
+/* center the header */ 
+.header {
+	text-align:center;
+}
+
+/* requirement 2/3 should use CSS to set the style of the text and other parts of the design as appropriate, in at least 3 ways. */
+/* Use a mono spaced font for the score*/
+.score {
+	font-family:monospace;
+}
+
+/* requirement 3/3 should use CSS to set the style of the text and other parts of the design as appropriate, in at least 3 ways. */
+/* use bigger, justified text for info */
+
+.info {
+	font-size:14px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+/* requirement should use CSS to set the style of the text and other parts of the design as appropriate, in at least 3 ways. */
+/* use smaller, text for footer info */
+.footer {
+	font-size:11px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+/* put a box around some content */
+.bordered {
+	margin-top:10px;
+	margin-left:20%;
+	margin-right:20%;
+	border:1px grey dotted;
+}
+
+/* put whitespace around images for clarity */
+.img-container {
+	margin-top:5px;
+	text-align:center;
+}

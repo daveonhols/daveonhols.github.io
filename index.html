@@ -1,1 +1,120 @@
-Hello World
+<html>
+	<head>
+	
+		<!-- This responsive page is a game:  !!!Click Red!!! -->
+		<!-- 
+		
+		****************************
+		! ! ! C L I C K  R E D ! ! ! 
+		****************************
+		
+		The page displays four images.  One will be red, three will be blue.  
+		The user gains points for clicking the red image, and loses points for clicking a blue image
+		There is also a timer, if the user does not click the image in time, they lose points
+		There are three modes, "Easy", "Medium" and "Hard".  
+		The time limit passes faster in harder modes, but more points are scored for a successful click
+		The scoring algorithm includes a multiplier that increases on every successful click.  		
+		The maximum score grows geometrically with more successful clicks!!
+
+		-->
+		<title>!!! Click Red !!!</title>
+
+		<!-- import bootstrap -->
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="bootstrap.css"
+		      />
+
+		<!-- import our own stylesheet -->
+		<link rel="stylesheet"
+			  type="text/css"
+			  href="clickred.css"
+		      />	
+
+		<!-- import jQuery -->
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+	<div class="container">
+	<p class="info bordered"><b>Instructions:</b> Click a button to choose a difficulty level.  
+	<br>Click red images, avoid blue images and be quick to score points.  
+	<br>You get ten chances.  
+	<br>Press F5 to try again</p>
+		<!-- general application info at the top -->
+		<h1 class="header">Click Red</h1>
+		<h2 id="score" class="header score">Score:0</h2>
+		<h2 class="header">Level</h2>
+		
+		<!-- a row of buttons for the user to set the difficulty level -->		
+		<div class="row">
+			<div class="col-md-4">
+				
+			</div>
+			<!-- Give buttons for the user to select the difficulty level -->
+			<div align="center" class="col-md-4">
+				<button class="button-level" id="Easy">Easy</button>
+				<button class="button-level" id="Medium">Medium</button>
+				<button class="button-level" id="Hard">Hard</button>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+		
+
+		<!--
+			The four images to click
+			In wide screen mode, it will be two rows of two	
+			But using the magic of responsive design... 
+			in narrow screen mode, it will be one column of four
+			
+			The images default to grey, 
+			when the user starts the game, one will be red, three will be blue
+			The image clicks will be registered by ID = image[1,2,3,4]
+			The game keeps track of which one of the four images is red each time
+		-->
+		<div class="row">
+			<div class="col-md-4">
+
+			</div>
+			<div class="col-md-2 img-container">
+				<img class="click-img" id="image1" width=80px src="grey.png" alt="TL"/>
+			</div>
+			<div class="col-md-2 img-container">
+				<img  class="click-img" id="image2" width=80px src="grey.png" alt="TR"/>
+			</div>
+			<div class="col-md-4">
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+			</div>
+			<div class="col-md-2 img-container">
+				<img class="click-img" id="image3" width=80px src="grey.png" alt="BL"/>
+			</div>
+			<div class="col-md-2 img-container">
+				<img class="click-img" id="image4" width=80px src="grey.png" alt="BR"/>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+	</div>
+	
+	<!-- some info about the app at the bottom -->
+	<div class="row">
+			<div class="col-md-4">
+			
+			</div>
+			
+			<div class="col-md-4">
+			<p class="footer bordered">Click red, an interactive, responsive, bootstrap & JQuery application, brought to you by Coursera, The University of London and me!</p>
+			</div>
+			
+			<div class="col-md-4">
+			</div>
+
+	<script src="clickred.js"></script>
+		<!-- the script containing game related javascript logic -->
+	</body>
+</html>
+
