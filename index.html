@@ -4,7 +4,7 @@
    <title></title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">    
+    <link href="css/styles.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -29,6 +29,16 @@
         <a class="flex-item bright-text menu-text ev-recent" href="#">Recent</a>
         <a class="flex-item bright-text menu-text ev-contacts" href="#">Contacts</a>
       </div>
+      <div class="flex-container search-bg">
+        <div class="input-group my-form-style">
+          <input type="text" class="form-control" placeholder="18 Contacts" aria-describedby="basic-addon1">
+        </div>
+      </div>
+      <div class="flex-container calls-bar">
+        <p>All Contacts</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+      </div>
+      <div class="scroll-content">
+      </div>
     </div>
     <div class="gridon calls">
       <div class="flex-container header contacts_head">
@@ -47,39 +57,81 @@
         </div>
       </div>
       <div class="flex-container calls-bar">
-        <p >All Calls</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+        <p>All Calls</p><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
       </div>
       <hr class="thin"/>
-
-      <div class="flex-container call-item">
-        <div class = "call-image ">
-          <img src="donald.jpg" class=" call-image-box">
+      <div class="scroll-content">
+        <div class="flex-container call-item">
+          <div class = "call-image ">
+            <img src="donald.jpg" class=" call-image-box">
+          </div>
+          <div class = "flex-container call-holder ">
+            <p class="call-number">Donald</p>
+            <p class=" call-location">Florida</p>
+            <p class=" call-extra">Duration: 3m 15s</p>
+          </div>
+          <div class="call-expand">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </div>
         </div>
-        <div class = "flex-container call-holder ">
-          <p class="call-number">Donald</p>
-          <p class=" call-location">Florida</p>
-          <p class=" call-extra">Duration: 3m 15s</p>
+        <hr class="thin"/>
+        <div class="flex-container call-item">
+          <div class = "call-image ">
+            <img src="mickey.jpg" class=" call-image-box">
+          </div>
+          <div class = "flex-container call-holder ">
+            <p class="call-number">Mickey</p>
+            <p class=" call-location">Paris</p>
+            <p class=" call-extra">Duration: 12m 05s</p>
+          </div>
+          <div class="call-expand ">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </div>
         </div>
-        <div class="call-expand">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <hr class="thin"/>
+        <div class="flex-container call-item">
+          <div class = "call-image ">
+            <img src="mickey.jpg" class=" call-image-box">
+          </div>
+          <div class = "flex-container call-holder ">
+            <p class="call-number">Mickey</p>
+            <p class=" call-location">Paris</p>
+            <p class=" call-extra">Duration: 12m 05s</p>
+          </div>
+          <div class="call-expand ">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </div>
         </div>
+        <hr class="thin"/>
+        <div class="flex-container call-item">
+          <div class = "call-image ">
+            <img src="mickey.jpg" class=" call-image-box">
+          </div>
+          <div class = "flex-container call-holder ">
+            <p class="call-number">Mickey</p>
+            <p class=" call-location">Paris</p>
+            <p class=" call-extra">Duration: 12m 05s</p>
+          </div>
+          <div class="call-expand ">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </div>
+        </div>
+        <hr class="thin"/>
+        <div class="flex-container call-item">
+          <div class = "call-image ">
+            <img src="mickey.jpg" class=" call-image-box">
+          </div>
+          <div class="flex-container call-holder ">
+            <p class="call-number">Mickey</p>
+            <p class=" call-location">Paris</p>
+            <p class=" call-extra">Duration: 12m 05s</p>
+          </div>
+          <div class="call-expand ">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </div>
+        </div>
+        <hr class="thin"/>
       </div>
-      <hr class="thin"/>
-      <div class="flex-container call-item">
-        <div class = "call-image ">
-          <img src="mickey.jpg" class=" call-image-box">
-        </div>
-        <div class = "flex-container call-holder ">
-          <p class="call-number">Mickey</p>
-          <p class=" call-location">Paris</p>
-          <p class=" call-extra">Duration: 12m 05s</p>
-        </div>
-        <div class="call-expand ">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </div>
-      </div>
-      <hr class="thin"/>
-
 </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

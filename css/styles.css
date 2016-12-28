@@ -1,3 +1,7 @@
+html, body {
+	height: 100%;
+}
+
 .blank_outer {
 	position:absolute;
 	overflow: hidden;
@@ -17,7 +21,11 @@
 	right:0;
 	width:90%;
 	max-width: 480px;
-	height: 90%;
+}
+
+.scroll-content {
+	height:500px;
+	overflow: auto;
 }
 
 .shift-center {
@@ -99,7 +107,6 @@
 
 .my-form-style {
 	width:97%;
-
 }
 
 .calls-bar {
